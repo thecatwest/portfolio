@@ -2,115 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Westover</title>
-    <link rel="stylesheet" href=".assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+    </style>
   </head>
 
   <body>
-    <!-- navigation -->
+    <!-- header -->
     <header>
       <h1>
         <a href="/">Cat Westover</a>
       </h1>
+      <!-- navigation -->
       <nav>
-        <!-- unordered list element -->
         <ul>
-          <!-- list item element -->
           <li>
-            <!-- anchor elements -->
+            <a href="#home">Home</a>
+          </li>
+          <li>
             <a href="#about-me">About Me</a>
           </li>
           <li>
             <a href="#work">Work</a>
           </li>
           <li>
-            <a href="#contact-info">Contact Info</a>
+            <a href="#contact-info">Contact</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#Resume">Resume</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- hero/jumbotron-->
-    <section>
-      <div>
-        <h2>Full Stack Developer</h2>
-      </div>
+    <!-- hero/jumbotron -->
+    <section id="hero">
+      <!-- subtitle -->
+      <h2 class="section-titles rotate">Full-Stack Developer</h2>
     </section>
     <!-- end hero -->
 
     <!-- "about me" section -->
     <section id="about-me">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-      <div class="bio">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          porro consequatur est mollitia quasi officia itaque ut harum possimus
-          distinctio aperiam explicabo, doloremque, minima cupiditate veritatis
-          impedit dignissimos eius odio.
-        </p>
-      </div>
-    </section>
-
-    <!-- "work" section -->
-    <section id="work">
-      <div class="section-title">
-        <h2>Work</h2>
-      </div>
-
-      <article id="projects">
-        <div id="run-buddy" class="project">
-          <!-- add project code here -->
-        </div>
-        <div id="project-2" class="project">
-          <!-- add project-2 code here -->
-        </div>
-        <div id="project-3" class="project">
-          <!-- add project-3 code here -->
-        </div>
-        <div id="project-4" class="project">
-          <!-- add project-4 code here -->
-        </div>
-        <div id="project-5" class="project">
-          <!-- add project-5 code here -->
-        </div>
-        <div id="project-6" class="project">
-          <!-- add project-6 code here -->
+      <article class="bio">
+        <h2 class="section-titles">About Me</h2>
+        <img src="#" alt="Headshot of Cat Westover" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam
+            assumenda labore accusantium at, iste dolorem dolore porro, odio
+            ipsam non est dolor ea magni corrupti? Nostrum laboriosam quam
+            omnis?
+          </p>
         </div>
       </article>
     </section>
+    <!-- end "about me" section -->
 
-    <!-- "contact" section-->
-    <section id="contant">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
+    <!-- "work" section -->
+    <section id="work">
+      <article id="projects">
+        <!-- project 1 -->
+        <a href="#">
+          <div class="project">
+            <img src="#" alt="Screenshot of Run Buddy, Inc. Website" />
+            <div class="project-info">
+              <h3>Run Buddy, Inc.</h3>
+              <h4>HTML + CSS</h4>
+            </div>
+          </div>
+        </a>
 
-      <div>
-        <nav id="contact-nav">
-          <ul>
-            <li>
-              <a href="tel:4807974648">P: 480.797.4648</a>
-            </li>
-            <li>
-              <a href="mailto:catwestover@outlook.com"
-                >catwestover@outlook.com</a
-              >
-            </li>
-            <li>
-              <a href="https://www.github.com/thecatwest">GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/catawestover">LinkedIn</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <!-- project 2 -->
+        <div class="project">
+          <div class="project-info">
+            <h3>Horiseon</h3>
+            <h4>HTML + CSS</h4>
+          </div>
+        </div>
+
+        <!-- project 3 -->
+        <div class="project">
+          <div class="project-info">
+            <h3>##</h3>
+            <h4>HTML + CSS</h4>
+          </div>
+        </div>
+
+        <!-- project 4 -->
+        <div class="project">
+          <div class="project-info">
+            <h3>##</h3>
+            <h4>HTML + CSS</h4>
+          </div>
+        </div>
+      </article>
     </section>
+    <!-- end "work" section -->
+
+    <!-- "contact" section -->
+    <section id="#contact-info">
+      <nav class="contact-nav">
+        <ul>
+          <li>
+            <a href="tel:4807974648">C: 480.797.4648</a>
+          </li>
+          <li>
+            <a href="mailto:catwestover@outlook.com">Email</a>
+          </li>
+          <li>
+            <a href="https://www.github.com/thecatwest" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/catawestover" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- end "contact" session -->
   </body>
+  <footer>
+    <h2>Made by Cat Westover</h2>
+  </footer>
 </html>

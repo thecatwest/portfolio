@@ -1,0 +1,126 @@
+:root {
+    --header-color: #1F2D36;
+    --section-header-outline: #FD439B;
+    --section-header-text: #FFE201;
+    --background-color: #E6D2DC;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    font-family: 'Rock Salt', cursive;
+    color: var(--header-color);
+}
+
+/* header style begin */
+header {
+    background: var(--header-color);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 48px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px var(--section-header-outline);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--section-header-text);
+    stroke: var(--section-header-outline);
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 40px;
+    color: var(--section-header-outline);
+    stroke: var(--section-header-text);
+    font-size: 30px;  
+    text-decoration: none;
+    text-shadow: 2px 2px var(--section-header-text);
+}
+
+/* footer style begin */
+footer {
+    background: var(--header-color);
+    padding: 0;
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 30;
+    color: var(--section-header-outline);
+    stroke: var(--section-header-text);
+}
+
+#hero {
+    /* display: inline;
+    padding: 0;
+    margin: 0; */
+    background-image: url("../images/hero-portfolio.jpg");
+    height: 850px;
+    background-size: cover;
+}
+
+#hero h2 {
+    display: inline;
+    padding: 10px;
+    margin: 0;
+    float: right;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--section-header-text);
+    stroke: var(--section-header-outline);
+    text-shadow: 4px 4px var(--header-color);
+    position: absolute;
+    left: 750px;
+    top: 218px;
+}
+
+.contact-nav ul li {
+    display: inline;
+}
+
+.contact-nav ul li a {
+    margin: 0 40px;
+    color: var(--section-header-text);
+    stroke: var(--section-header-outline);
+    font-size: 36px;  
+    text-decoration: none;
+}
+
+
+.section-title {
+    color: var(--section-header-text);
+    stroke: 1px var(--section-header-outline);
+    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text, h4 {
+    font-family: 'sans-serif';
+}
+
+.rotate {
+    transform: rotate(14deg);
+}
