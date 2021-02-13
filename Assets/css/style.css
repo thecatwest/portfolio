@@ -23,6 +23,9 @@ header {
     margin: 0;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -36,25 +39,27 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--section-header-text);
-    stroke: var(--section-header-outline);
+    text-shadow: 2px 2px var(--section-header-outline);
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
-    margin: 0 40px;
+    margin: 0 30px;
     color: var(--section-header-outline);
-    stroke: var(--section-header-text);
-    font-size: 30px;  
-    text-decoration: none;
     text-shadow: 2px 2px var(--section-header-text);
+    font-size: 2vw;  
+    text-decoration: underline;
 }
 
 /* footer style begin */
@@ -62,18 +67,18 @@ footer {
     background: var(--header-color);
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer h2 {
     font-size: 30;
     color: var(--section-header-outline);
-    stroke: var(--section-header-text);
+    text-shadow: 2px 2px var(--section-header-text);
 }
 
 #hero {
-    /* display: inline;
-    padding: 0;
-    margin: 0; */
     background-image: url("../images/hero-portfolio.jpg");
     height: 850px;
     background-size: cover;
@@ -85,41 +90,82 @@ footer h2 {
     margin: 0;
     float: right;
     font-size: 30px;
-    text-decoration: none;
     font-weight: bold;
     color: var(--section-header-text);
-    stroke: var(--section-header-outline);
     text-shadow: 4px 4px var(--header-color);
     position: absolute;
     left: 750px;
     top: 218px;
 }
 
-.contact-nav ul li {
-    display: inline;
+h2 {
+    text-decoration: underline;
+}
+
+#about-me {
+    display: inline-block;
+}
+
+.bio {
+    padding: 75px;
+}
+.bio img {
+    height: 300px;
+    width: auto;
+    border: 5px solid var(--section-header-outline)
+}
+
+.bio p {
+    float: right;
+    font-family: 'sans-serif';
+}
+
+.bio div {
+    display: inline-block;
+}
+
+.bio-text {
+    float: right;
+    width: 75%;
+    text-align: justify;
+    position: relative;
+    margin-right: 30px;
+    height: 300px;
+    font-size: 24px;
+}
+
+.contact-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 .contact-nav ul li a {
-    margin: 0 40px;
+    margin: 0 30px;
     color: var(--section-header-text);
-    stroke: var(--section-header-outline);
-    font-size: 36px;  
+    text-shadow: 2px 2px var(--section-header-outline);
+    font-size: 3vw;  
     text-decoration: none;
 }
 
 
 .section-title {
-    color: var(--section-header-text);
-    stroke: 1px var(--section-header-outline);
+    color: var(--section-header-outline);
+    text-shadow: 2px 2px var(--section-header-text);
     font-size: 48px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.text, h4 {
+
+
+/* .text, h4 {
     font-family: 'sans-serif';
-}
+} */
 
 .rotate {
     transform: rotate(14deg);
