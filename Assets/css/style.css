@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 header h1 {
@@ -212,10 +213,42 @@ h2 {
 }
 
 /* contact section style begin */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    width: auto;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.form {
+    justify-content: center;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--section-header-outline);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--header-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--background-color));
+}
+
 .contact-nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -228,12 +261,23 @@ h2 {
     text-decoration: none;
 }
 
+/* contact form style begin */
+.button {
+    background: var(--section-header-text);
+    color: var(--section-header-outline);
+    font-family: 'Rock Salt', cursive;
+    box-shadow: 2px 2px var(--header-color);
+}
 
-.section-title {
+input[type=submit] {
+    width: 10em; 
+    height: 4em;
+}
+
+.section-title { 
     color: var(--section-header-outline);
     text-shadow: 2px 2px var(--section-header-text);
     font-size: 48px;
-    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
@@ -242,3 +286,4 @@ h2 {
 .rotate {
     transform: rotate(14deg);
 }
+
