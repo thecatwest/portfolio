@@ -1,0 +1,216 @@
+:root {
+    --header-color: #1F2D36;
+    --section-header-outline: #FD439B;
+    --section-header-text: #FFE201;
+    --background-color: #E6D2DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    font-family: 'Rock Salt', cursive;
+    color: var(--header-color);
+}
+
+/* header style begin */
+header {
+    background: var(--header-color);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 48px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px var(--section-header-outline);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--section-header-text);
+    text-shadow: 2px 2px var(--section-header-outline);
+}
+
+header nav {
+    margin: 7px 0;
+    z-index: -1;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    color: var(--section-header-outline);
+    text-shadow: 2px 2px var(--section-header-text);
+    font-size: 2vw;  
+    text-decoration: underline;
+}
+
+/* footer style begin */
+footer {
+    background: var(--header-color);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+footer h2 {
+    font-size: 30;
+    color: var(--section-header-outline);
+    text-shadow: 2px 2px var(--section-header-text);
+}
+/* end footer style */
+
+h2 {
+    text-decoration: underline;
+    color: var(--section-header-outline);
+    text-shadow: 2px 2px var(--section-header-text);
+    text-align: center;
+}
+
+#resume-container {
+    height: 600px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.spacer {
+    flex: 1;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
+@media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+}
