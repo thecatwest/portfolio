@@ -84,23 +84,23 @@ footer h2 {
 /* hero section style begin */
 #hero {
     background-image: url("../images/hero-portfolio.jpg");
-    height: 850px;
+    /* background-attachment: fixed; */
     background-size: cover;
-    border-bottom: 10px solid var(--section-header-outline);
+    height: 850px;
+    /* background-repeat: no-repeat;
+    background-position: center center; */
+    border-bottom: 10px solid var(--header-color);
 }
 
 #hero h2 {
     display: inline;
     padding: 10px;
     margin: 0;
-    float: right;
     font-size: 30px;
     font-weight: bold;
     color: var(--section-header-text);
     text-shadow: 4px 4px var(--header-color);
-    position: absolute;
-    left: 750px;
-    top: 218px;
+    position: relative;
 }
 
 h2 {
@@ -116,10 +116,10 @@ h2 {
 
 .bio {
     padding: 75px;
-    display: block;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: column; */
 }
 
 .bio img {
@@ -132,17 +132,17 @@ h2 {
 
 .bio div {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .bio-text {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    align-items: center;
     text-align: justify;
     font-size: 24px;
     font-family: 'sans-serif';
-    flex-direction: row;
     padding: 20px;
 }
 
@@ -210,6 +210,8 @@ h2 {
 
 .project-info h3, h4 {
     padding: 10px;
+    color: var(--section-header-outline);
+    text-shadow: var(--header-color);
 }
 
 .overlay {
@@ -351,84 +353,88 @@ input[type=submit] {
         width: 100%;
     }
 
-    .hero-cta, .hero-form {
+    .contact-nav ul {
+        justify-content: center;
         width: 100%;
     }
 
-    .hero-cta {
+    .contact-nav ul lu a {
+        font-size: 1.5vm;
+    }
+
+    #hero {
+        width: 100%;
         text-align: center;
+        background-image: url("../images/hero-portfolio.jpg");
     }
 
     .section-title {
         width: 80%;
     }
-
-    .trainer {
-        flex: 0 70%;
-    }
-
-    .contact-info iframe {
-        flex: 1 100%;
-    }
 }
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .step-text {
-        flex: 100%;
-    }
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
-@media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-    }
-
+@media screen and (max-width: 979px) {
     .section-title {
         width: 95%;
     }
 
-    .intro p {
+    .bio p {
         width: 100%;
     }
 
-    .trainer {
-        flex: 0 100%;
-    }
-
-    .contact-info {
+    #contact-info {
         text-align: center;
     }
 
-    .contact-info > * {
+    #contact-info > * {
         flex: 0 100%;
     }
 
     .contact-form {
         order: 3;
+    }
+
+    .bio img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #hero {
+        background-image: url("../images/hero-portfolio.jpg");
+    }
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+
+    .bio p {
+        width: 100%;
+    }
+
+    #contact-info {
+        text-align: center;
+    }
+
+    #contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+
+    .bio img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #hero {
+        background-image: url("../images/hero-portfolio.jpg");
     }
 }
